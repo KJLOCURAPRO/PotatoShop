@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PotatoShop</title>
+  <link rel="stylesheet" href="../cs/style.css" type="text/css" media="all" />
+  <link rel="icon" href="src/img/potatoLogo.png" type="image/x-icon" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="../src/img/potatoLogo.png" alt="PotatoShop Logo"> <!-- Asegúrate de tener la imagen en la ruta correcta -->
+      <h1>PotatoShop</h1>
+    </div>
+    
+    <nav id="headerTexts">
+      <ul>
+        <li><a class="here" href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="h/about.html">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito"><img src="../src/img/carrito.png" alt="Carrito" style="width: 50px;"></a></li>
+      </ul>
+    </nav>
+    
+    <a href="#cta" class="cta">Compra tu producto perfecto</a>
+  </header>
+  
+  <!-- Resto de la página -->
+
+  <div id="productoUno">
+  
+ 
+  
+  <div id="productoUnotext">
+
+    <h2 id="nombre producto">Gorra color gris</h2>
+    <h2 id="precio">2000$</h2>
+   </div>
+  </div>
+   <img src="/src/img/AppleStore.png" alt="pone" id="imgproductoUno">
+
+
+
+  <div id="container" class="ocult">
+    <!-- Imagen del Producto -->
+    <div>
+        <img src="/src/img/AppleStore.png" alt="Producto" class="product-image">
+    </div>
+    <!-- Detalles del Producto -->
+    <div id="product-details">
+        <h1 id="product-title">Gorra color gris</h1>
+        <p id="product-price">$2000 COP</p>
+
+        <p id="product-description">
+           Una gorra de color gris la cual esta a un precio de regalo no esque este en mala calidad, es mas, bueno bonito y barato.
+        </p>
+
+        <div id="product-rating">
+            ★★★☆☆ 
+            <span>(5 reseñas)</span>
+        </div>
+
+        <button class="addToCar">Agregar al carrito</button>
+    </div>
+    <div id="buttonCloseOne">
+      <button id="CloseOne">X</button>
+    </div>
+</div>
+
+</body>
+<script src="js/products.js"></script>
+</html>

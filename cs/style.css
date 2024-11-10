@@ -1,0 +1,232 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #f4a261;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#headerTexts ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#headerTexts a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#headerTexts a:hover {
+    color: #2a9d8f;
+}
+
+.cta {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #21867a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .cta {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+.here {
+    color:lime;
+}
+
+#imgproductoUno{
+    height: 15%;
+    width: 15%;
+    border: solid 10px;
+    border-color: red;
+    cursor: pointer;
+    margin-left:30px;
+}
+
+
+#productoUnotext{
+    height: 1%;
+    width: 15%;
+    height: 8%;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+#precio{
+    color: lime;
+    position: absolute;
+    left: 40px;
+}
+
+#productoUno{
+    margin-top: 20px;
+    width: 20%;
+    height: 20%;
+    margin-left:30px; 
+    cursor: pointer;
+    background-color: #21867a;
+}
+
+
+
+/*por ahora*/
+
+#container {
+    max-width: 1200px;
+    margin: 10px auto;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#product-image {
+    max-width: 10px;
+    width: 10%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#product-details {
+    flex: 1;
+    margin-left: 20px;
+}
+#product-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+#product-price {
+    font-size: 24px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+#product-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.addToCar {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    margin-top:700px;
+    margin-left:30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.addToCar:hover {
+    background-color: #2ecc71;
+}
+#product-rating {
+    font-size: 18px;
+    color: #f39c12;
+    margin-top: 20px;
+}
+#product-rating span {
+    margin-left: 5px;
+}
+#product-details h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #333;
+}
+
+.ocult{
+    visibility: hidden ;
+    display: none;
+}
+
+.showOne{
+    display: flex;
+    visibility: visible;
+}
+
+.show{
+    display: block;
+}
+
+#CloseOne{
+    background-color: #ff3e3e;
+    border-radius: 20px;
+    width:25px;
+    border-color: #ff3e3e;
+    transition: transform 0.5s ease;
+}
+
+#CloseOne:hover{
+
+    transform: rotate(360deg)  translateY(-6px) scale(1.3);
+}

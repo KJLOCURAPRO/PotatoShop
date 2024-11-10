@@ -1,0 +1,32 @@
+{
+    "name": "PotatoShop",
+    "version": "0.0.5-beta",
+    "description": "¡Quieres productos baratos? aqui esta PotatoShop",
+    "main": "index.html",
+    "scripts": {
+      "start": "live-server",
+      "build": "echo 'No build script specified'" 
+    },
+    "keywords": [
+      "html",
+      "css",
+      "javascript",
+      "shop"
+    ],
+    "author": "Keider Luis Ortega Wilches",
+    "license": "ISC",
+    "devDependencies": {
+      "live-server": "^1.2.1"
+    },
+    "credits": {
+        "main-programmer": "Keiler Josué Ortega Wilches",
+        "Artist": [
+            "Keiler Josué Ortega Wilches",
+            "Todoroki"
+        ],
+        "sounds": [
+            "Todoroki",
+            "Keiler Josué Ortega Wilches"
+        ]
+    }
+}
